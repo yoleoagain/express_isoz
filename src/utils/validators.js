@@ -13,7 +13,25 @@ module.exports = {
         return !user || !('name' in user) || !('email' in user)
     },
 
+    isValidAuthor(author) {
+        return !author || !('name' in author)
+    },
+
     isValidPost(post) {
         return !post || !('body' in post) || !('title' in post)
+    },
+
+    isValidGenre(genre) {
+        return !genre || !('name' in genre)
+    },
+
+    isValidBook(book) {
+        return !book || !('name' in book) || !('genre_id' in book)
+    },
+
+    bookStatus: {
+        IN_STOCK: 'in_stock',
+        SOLD: 'sold',
+        FOR_RENT: 'for_rent'
     }
 }

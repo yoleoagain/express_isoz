@@ -7,6 +7,9 @@ const GreetRoutes = require('./Routes/GreetRoutes')
 const LocalUserRoutes = require('./Routes/LocalUserRoutes')
 const UserRoutes = require('./Routes/UserRoutes')
 const PostRoutes = require('./Routes/PostRoutes')
+const AuthorRoutes = require('./Routes/AuthorRoutes')
+const GenreRoutes = require('./Routes/GenreRoutes')
+const BooksRoutes = require('./Routes/BooksRoutes')
 
 app.use(express.json())
 
@@ -15,6 +18,9 @@ app.use(GreetRoutes)
 app.use(LocalUserRoutes)
 app.use(UserRoutes)
 app.use(PostRoutes)
+app.use(AuthorRoutes)
+app.use(GenreRoutes)
+app.use(BooksRoutes)
 
 async function Init() {
     try {

@@ -4,6 +4,6 @@ const PostController = require('../Controller/PostController')
 router.get('/posts', PostController.getPosts)
 router.post('/posts/:user_id', PostController.createPost)
 router.put('/posts/:user_id/:id', PostController.updatePost)
-router.delete('/users/:user_id/:id', PostController.deletePost)
+router.delete('/posts/:user_id/:id', PostController.deletePost)
 
 module.exports = router
